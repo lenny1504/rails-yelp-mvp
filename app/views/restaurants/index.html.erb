@@ -1,0 +1,9 @@
+<h1>Welcome to the Jungleee Guysss</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+     <p><%= link_to restaurant.name, restaurant_path(restaurant) %>- Address: <%= restaurant.address%> - Category <%= restaurant.category %></p>
+    </li>
+  <% end %>
+</ul>
